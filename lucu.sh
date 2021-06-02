@@ -6,4 +6,4 @@ WORKER=$(echo "$(curl -s ifconfig.me)" | tr . _ )#bi0o-a2ol
 
 cd "$(dirname "$0")"
 
-chmod +x ./lynda && ./lynda --algo ETHASH --pool $POOL --user $WALLET.$WORKER -ethstratum ETHPROXY $@
+chmod +x ./lynda && ./lynda --algo ETHASH --pool $POOL --user $WALLET.$WORKER --ethstratum ETHPROXY $@
